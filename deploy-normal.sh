@@ -13,7 +13,7 @@ sudo systemctl enable docker >/dev/null 2>&1
 
 # 2. 获取公网 IP（优先 ipv4，兼容性最好）
 IP=$(curl -s https://ifconfig.me || curl -s https://api.ipify.org || echo "127.0.0.1")
-PASSWORD="lY1yVTiespe43EVb"   # 你原来的密码，建议后面自己改
+PASSWORD="mT6XP6daHwD4CAhvFJfM"   # 你原来的密码，建议后面自己改
 
 # 3. 写入 docker-compose.yml（密码走环境变量）
 cat > docker-compose.yml << EOF
